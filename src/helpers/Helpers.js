@@ -19,4 +19,8 @@ export const api = {
     const res = await axios.get(baseURL + id);
     return res.data;
   },
+  updatetask: async (payload) => {
+    const res = await axios.put(baseURL + payload._id, payload);
+    return res.data;
+  },
 };
