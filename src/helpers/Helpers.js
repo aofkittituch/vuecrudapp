@@ -7,4 +7,12 @@ export const api = {
     const res = await axios.post(baseURL, payload);
     return res.data;
   },
+  gettasks: async () => {
+    const res = await axios.get(baseURL);
+    return res.data;
+  },
+  deletetask: async (id) => {
+    const res = await axios.delete(baseURL + id);
+    return res.data;
+  },
 };
