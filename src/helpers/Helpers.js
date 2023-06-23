@@ -15,4 +15,8 @@ export const api = {
     const res = await axios.delete(baseURL + id);
     return res.data;
   },
+  gettask: async (id) => {
+    const res = await axios.get(baseURL + id);
+    return res.data;
+  },
 };
